@@ -26,19 +26,19 @@ class Animal:
 
 # Create an object
 
-ringo = Animal("Ringo", 12, 'Red', True, True)
-
-# print object
-print(ringo)
-# print class
-print(type(ringo))
-
-# run methods
-print(ringo.eat())
-print(ringo.sleep())
-print(ringo.reproduce())
-
-# check attributes
-print(ringo.name.capitalize())
-print(ringo.age)
-print(ringo.brain)
+# ringo = Animal("Ringo", 12, 'Red', True, True)
+#
+# # print object
+# print(ringo)
+# # print class
+# print(type(ringo))
+#
+# # run methods
+# print(ringo.eat())
+# print(ringo.sleep())
+# print(ringo.reproduce())
+#
+# # check attributes
+# print(ringo.name.capitalize())
+# print(ringo.age)
+# print(ringo.brain)

@@ -46,12 +46,38 @@ These are attributes that are assigned to each instance.
  
 
 ## Abstraction
+The ability to hide complexity. You don't need to know how something works to be able to use it.
+
+This is done by using:
+- Separation of concerns
+- Documentation
+    - This is where you specify all the methods within a class, as well as how to use them
+- Inheritance can cause abstraction too
+
+Real life examples are everywhere.
+- Changiing gears
+- Heating up food in a microwave
+- Entering a door with a security card
+
+## Inheritance
+The ability to pass the methods and attributes of one class to a child class.
+
+This is one of the big reasons for OOP - it means that you can reuse code.
+
+**Promise of reusable code**
+
+```python
+class Animal():
+    pass
+
+class Reptile(Animal):
+    pass
+```
 
 ## Encapsulation
 
-## Inheritance
 
 ## Polymorphism
+Literally means MANY FORMS.
 
-
-
+This is the ability to overwrite methods and, if need be, recall methods from parent class using super
