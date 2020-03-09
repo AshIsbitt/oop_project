@@ -3,10 +3,28 @@
 class Animal:
     def __init__(self, name, age, colour, heart, brain):
         self.name = name
-        self.age = age
+        self.__age = age
         self.colour = colour
         self.heart = heart
         self.brain = brain
+
+    # Getter method
+    def get_age(self):
+        return self.__age
+
+    # Setter method
+    def set_age(self, val):
+        # fake verification
+        password = input("Enter password")
+
+        if password == 'Surprise':
+                self.__age = val
+                return True
+        else:
+            return False
+
+    def __increment_age(self):
+        self.__age += 1
 
     def eat(self):
         return "Yum"

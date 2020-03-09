@@ -75,9 +75,53 @@ class Reptile(Animal):
 ```
 
 ## Encapsulation
+Making methods or attributes private. When methods or attributes are private, they can only be called by their own functions or within a class
+
+This allows you to restrict access from external functions/methods
+
+The easiest way to do this is with two underscores before the attribute name in the init
+
+#### Private Variable:
+```python
+self.__age
+```
+
+#### Protected Variable:
+
+This leads to getters and setters
+
+```python
+
+```
 
 
 ## Polymorphism
 Literally means MANY FORMS.
 
 This is the ability to overwrite methods and, if need be, recall methods from parent class using super
+
+## .super()
+It represents the parent class, and allows you to call methods from the parent class
+
+Usage and case in point:
+- Situation where you want to overwrite a method (say method .honk or make_a_sound())
+- You want to add new functionality to the new method but still have everything from first method.
+
+Most of the time, this happens within the __init__ method
+- You want to add new attributes to the child objects as well as keeping the parent attributes. 
+
+
+```python
+class Animal():
+
+    def __init__(self, age, colour_fur):
+        self.age = age
+        self.colour_fur = colour_fur
+
+class Reptile(Animal):
+
+    def __init__(self, name):
+        super().__init__(age, colour_fur)
+        self.name = name
+```
+
